@@ -6,6 +6,7 @@ RUN pip3 install pandocfilters fonttools
 RUN tlmgr option repository ctan
 RUN tlmgr update --self
 RUN tlmgr install latexmk
+RUN tlmgr install fvextra
 
 COPY entrypoint.sh /usr/bin/
 
